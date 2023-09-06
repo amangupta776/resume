@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 68);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+
+
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0a0a91;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+            padding: 20px;
+        }
+
+        .left-section {
+         
+            text-align: center;
+            
+        }
+
+        .photo-frame {
+            width: 350px;
+            height: 350px;
+            border: 5px solid #8117e3; /* Add a purple border */
+            border-radius: 50%; /* Create a circular frame */
+            overflow: hidden; /* Hide the image overflow */
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+            margin: 20px; /* Adjust the margin for spacing */
+        }
+
+        .left-section img {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the frame */
+           
+        }
+
+        .right-section {
+            width: 50%;
+        }
+
+        .right-section h1 {
+            font-size: 2.5rem;
+            color: #8117e3;
+        }
+
+        .right-section h2 {
+            font-size: 1.8rem;
+        }
+
+        .right-section p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+        }
+
+        .contact-details a {
+            display: block;
+            color: #8117e3;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            background-color: #b115e6;
+            height: 2px;
+            margin: 60px 0;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff; /* Background color for the dropdown */
+            border: 1px solid #ccc; /* Border color */
+            border-radius: 4px; /* Rounded corners */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 10px; /* Add padding for better spacing */
+            min-width: 200px; /* Adjust the width as needed */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content p {
+            margin: 0;
+            padding: 5px 0;
+            color: #333; /* Text color */
+        }
+
+        .dropdown-content a {
+            margin: 0;
+            padding: 5px 0;
+            color: #333; /* Text color */
+        }
+
+        .dropdown-content p:hover {
+            background-color: #f1f1f1; /* Hover background color */
+        }
+        #element{
+            color: rgb(129, 23, 227);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Aman's Portfolio</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/amanguptaa7/" target="_blank">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://github.com/amangupta776/My_Projects" target="_blank">Projects</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropbtn">Contact Us</a>
+                    <div class="dropdown-content">
+                        <p>Email: amanhyper41@gmail.com</p>
+                        <p>Phone: (+91)9630364873</p>
+                        <a href="https://www.linkedin.com/in/amanguptaa7/" target="_blank">LinkedIn Profile</a>
+                        <!-- Add more contact details or a contact form as needed -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="left-section">
+                <div class="photo-frame">
+                    <img src="aman.jpg" alt="Aman's Photo">
+                </div>
+            </div>
+            <div class="right-section">
+                <h1>Hi, I'm Aman</h1>
+                <h2>MCA Student and Passionate <span id="element"></span></h2>
+                <p>Welcome to my portfolio website. I am an MCA student with a passion for coding and web development.
+                    I specialize in web and software development and love creating innovative solutions.</p>
+                <hr>
+                <div class="contact-details">
+                    <p>Email: amanhyper41@gmail.com</p>
+                    <p>Phone: (+91) 9630364873</p>
+                    <a href="https://www.linkedin.com/in/amanguptaa7/" target="_blank">LinkedIn Profile</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Software Developer','React Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
