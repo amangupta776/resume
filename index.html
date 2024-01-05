@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
     <style>
-        * {
+ * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -27,13 +27,11 @@
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 68);
-
         }
 
         nav ul {
             display: flex;
             justify-content: center;
-
         }
 
         nav ul li {
@@ -48,8 +46,6 @@
         nav ul li a {
             text-decoration: none;
             color: aliceblue;
-
-
             transition: color 0.3s ease;
         }
 
@@ -70,26 +66,23 @@
         }
 
         .left-section {
-         
             text-align: center;
-            
         }
 
         .photo-frame {
             width: 350px;
             height: 350px;
-            border: 5px solid #8117e3; /* Add a purple border */
-            border-radius: 50%; /* Create a circular frame */
-            overflow: hidden; /* Hide the image overflow */
+            border: 5px solid #8117e3;
+            border-radius: 50%;
+            overflow: hidden;
             box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
-            margin: 20px; /* Adjust the margin for spacing */
+            margin: 20px;
         }
 
         .left-section img {
             max-width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensure the image covers the frame */
-           
+            object-fit: cover;
         }
 
         .right-section {
@@ -141,13 +134,13 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #fff; /* Background color for the dropdown */
-            border: 1px solid #ccc; /* Border color */
-            border-radius: 4px; /* Rounded corners */
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-            padding: 10px; /* Add padding for better spacing */
-            min-width: 200px; /* Adjust the width as needed */
+            padding: 10px;
+            min-width: 200px;
         }
 
         .dropdown:hover .dropdown-content {
@@ -157,20 +150,49 @@
         .dropdown-content p {
             margin: 0;
             padding: 5px 0;
-            color: #333; /* Text color */
+            color: #333;
         }
 
         .dropdown-content a {
             margin: 0;
             padding: 5px 0;
-            color: #333; /* Text color */
+            color: #333;
         }
 
         .dropdown-content p:hover {
-            background-color: #f1f1f1; /* Hover background color */
+            background-color: #f1f1f1;
         }
-        #element{
+        #element {
             color: rgb(129, 23, 227);
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .left-section,
+            .right-section {
+                width: 100%;
+            }
+
+            .photo-frame {
+                width: 150px;
+                height: 150px;
+            }
+
+            .right-section h1 {
+                font-size: 1.5rem;
+            }
+
+            .right-section h2 {
+                font-size: 1.2rem;
+            }
+
+            .right-section p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
